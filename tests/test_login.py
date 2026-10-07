@@ -25,12 +25,12 @@ def test_login_exitoso():
     #hacer login
         boton_login .click()
         
-        assert "/inventory.html" in driver.current_url
-
         titulo = driver.find_element(By.CLASS_NAME,"app_logo")
         time.sleep(2)
         #validar la URL despues del login
         assert driver.current_url == "https://www.saucedemo.com/inventory.html"
         assert titulo.text == "Swag Labs"
+
+        
     finally:
         driver.quit()
