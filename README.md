@@ -23,6 +23,8 @@ El proyecto permite poner en práctica:
 ## Instalar las dependencias:
 
 pip install selenium pytest
+pip install pytest-html
+pip install pytest
 
 ## Ejecutar las pruebas:
 
@@ -31,3 +33,8 @@ Para ejecutar un archivo de prueba específico:
 pytest "ruta\al\archivo.py"
 
 python -m pytest test_login.py
+
+## Casos de prueba
+- Login exitoso
+- Agregar producto al carrito
+- Verificar producto al carrito
